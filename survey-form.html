@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title" class="text-center">Music Survey Form</h1>
+      <p id="description" class="text-center">Help us learn about your musical tastes and preferences <span
+          id="description-tooltip"> Ayudanos a conocer algunos de tus gustos y preferencias musicales</span></p>
+    </header>
+
+    <form id="survey-form">
+      <fieldset id="firt_flex">
+        <legend id="pdata"> Personal Data<span id="pdatatooltip">Datos Personales</span></legend>
+
+        <div>
+          <label id="name-label" for="name">Please enter your name  <span id="name-tooltip">Escribe tu nombre</span></label>
+          <input id="name" type="text" required placeholder="name">
+        </div>
+        <div>
+          <label id="email-label" for="email">Please enter your email<span id="email-tooltip">Escribe tu email</span></label>
+          <input id="email" type="email" required placeholder="email">
+        </div>
+        <div>
+          <label id="number-label" for="number">Enter your age <span id="age-tooltip">Escribe tu edad</span></label>
+          <input id="number" type="number" required min="16" max="18" placeholder="age">
+        </div>
+        <div>
+          <label id="gender-label" for="dropdown">Select your Gender: <span id="gender-tooltip">Selecciona tu Genero</span> </label>
+          <select id="dropdown">
+            <option>select one</option>
+            <option>male</option>
+            <option>female</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset id="second_flex">
+        <legend id="psurvey">Survey <span id="psurvey-tooltip">Encuesta</span></legend>
+        <div>
+          <p id="musical-lessons">Have you ever taken lessons on any musical instrument?<span id="musical-lessonsTooltip">¿Alguna vez has recibido clases de algun instrumento musical?</span></p>
+          <label for="boton-radio1"><input id="boton-radio1" type="radio" name="boton-radio_agrupado"
+              value="boton radio 2" /> Yes,</label>
+          
+          <label for="dropdown"> which one?: </label>
+          <select id="dropdown2">
+            <option>select one</option>
+            <option>Piano</option>
+            <option>Guitar</option>
+            <option>Bass</option>
+            <option>Flute</option>
+            <option>Violin</option>
+            <option>Drums</option>
+            <option>Another</option>
+          </select>
+          <br>
+          <label for="boton-radio2"><input id="boton-radio2" type="radio" name="boton-radio_agrupado"
+            value="boton radio 2" /> No</label>
+
+        </div>
+        <div id="container-f-instrument">
+          <p id="f-instrument">What is your favorite musical instrument or instruments?<span id="f-instrument-tooltip">¿Cual es tu instrumento o instrumentos musicales favoritos?</span></p>
+          <label for="checkbox1">
+            <input id="checkbox1" type="checkbox" value="Este es un checkbox" required />Piano</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Guitar</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Bass</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Flute</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Violin</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Drums</label>
+
+          <label for="checkbox2-1">Another:
+            <input id="checkbox2-1" type="text" placeholder="write here..." required /></label>
+        </div>
+        <div id="container-f-music-g">
+          <p id="f-music-g">What is your favorite music genre or genres?<span id="f-music-g-tooltip">¿Cual es tu genero o generos musicales favoritos?</span></p>
+          <label for="checkbox1">
+            <input id="checkbox1" type="checkbox" value="Este es un checkbox" required />Classical music</label>
+
+          <label for="checkbox1">
+            <input id="checkbox1" type="checkbox" value="Este es un checkbox" required />Pop</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Rock</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />EDM (Electronic Music
+            Dance)</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Hip Hop</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Reggaeton</label>
+
+          <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" value="Este es un segundo checkbox" required />Trap</label>
+
+          <label for="checkbox2">Another:
+            <input id="checkbox2-2" type="text" placeholder="write here..." required /></label>
+
+        </div>
+        <div>
+          <P id="a-comments">Do you have any additional comments?<span id="a-comments-tooltip">Tienes algun comentario adicional?: </span></P>
+          <div id="container-textarea"><textarea id="comments" rows="4" cols="40" placeholder="comments..."></textarea></div>
+        </div>
+      </fieldset>
+      <div id="button-container">
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
